@@ -88,6 +88,25 @@ To generate SCAM Angular Component, run:
 nx g @nrwl/angular:scam --project=ngx-components --export  --style=scss --name=gb-button
 ```
 
+## Generate story for ng-button component
+
+To generate story for ng-button component, run:
+
+```shell
+nx g @nrwl/angular:stories --project=ngx-components --name=gb-button
+```
+
+## Execute Storybook
+
+To execute Storybook, run:
+
+```shell
+nx storybook ngx-components
+```
+
+→ The Storybook will be available at http://localhost:4400
+
+
 # Nx General
 
 <a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="45"></a>

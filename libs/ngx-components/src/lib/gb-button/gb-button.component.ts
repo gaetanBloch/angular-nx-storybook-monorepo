@@ -6,7 +6,9 @@ import { CommonModule } from '@angular/common';
   templateUrl: './gb-button.component.html',
   styleUrls: ['./gb-button.component.scss'],
 })
-export class GbButtonComponent {}
+export class GbButtonComponent {
+  text = 'Button';
+}
 
 @NgModule({
   imports: [CommonModule],
