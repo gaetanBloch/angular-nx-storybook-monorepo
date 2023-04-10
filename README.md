@@ -114,6 +114,14 @@ To install Angular Material, run:
 npm install @angular/material && npx nx g @angular/material:ng-add --project=ngx-components
 ```
 
+## Adding Tailwind CSS
+
+To add Tailwind CSS, run:
+
+```shell
+nx g @nrwl/angular:setup-tailwind ngx-components
+```
+
 # Nx General
 
 <a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="45"></a>
