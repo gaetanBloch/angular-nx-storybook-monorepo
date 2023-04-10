@@ -106,6 +106,13 @@ nx storybook ngx-components
 
 → The Storybook will be available at http://localhost:4400
 
+## Install Angular Material
+
+To install Angular Material, run:
+
+```shell
+npm install @angular/material && npx nx g @angular/material:ng-add --project=ngx-components
+```
 
 # Nx General
 
