@@ -1,25 +1,22 @@
 {
-  "name": "angular-nx-monorepo",
+  "name": "portal",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "prefix": "angular-nx-storybook-monorepo",
-  "sourceRoot": "apps/angular-nx-monorepo/src",
+  "sourceRoot": "apps/portal/src",
   "tags": [],
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/apps/angular-nx-monorepo",
-        "index": "apps/angular-nx-monorepo/src/index.html",
-        "main": "apps/angular-nx-monorepo/src/main.ts",
+        "outputPath": "dist/apps/portal",
+        "index": "apps/portal/src/index.html",
+        "main": "apps/portal/src/main.ts",
         "polyfills": ["zone.js"],
-        "tsConfig": "apps/angular-nx-monorepo/tsconfig.app.json",
-        "assets": [
-          "apps/angular-nx-monorepo/src/favicon.ico",
-          "apps/angular-nx-monorepo/src/assets"
-        ],
-        "styles": ["apps/angular-nx-monorepo/src/styles.scss"],
+        "tsConfig": "apps/portal/tsconfig.app.json",
+        "assets": ["apps/portal/src/favicon.ico", "apps/portal/src/assets"],
+        "styles": ["apps/portal/src/styles.scss"],
         "scripts": []
       },
       "configurations": {
@@ -53,10 +50,10 @@
       "executor": "@angular-devkit/build-angular:dev-server",
       "configurations": {
         "production": {
-          "browserTarget": "angular-nx-monorepo:build:production"
+          "browserTarget": "portal:build:production"
         },
         "development": {
-          "browserTarget": "angular-nx-monorepo:build:development"
+          "browserTarget": "portal:build:development"
         }
       },
       "defaultConfiguration": "development"
@@ -64,24 +61,21 @@
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
       "options": {
-        "browserTarget": "angular-nx-monorepo:build"
+        "browserTarget": "portal:build"
       }
     },
     "lint": {
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": [
-          "apps/angular-nx-monorepo/**/*.ts",
-          "apps/angular-nx-monorepo/**/*.html"
-        ]
+        "lintFilePatterns": ["apps/portal/**/*.ts", "apps/portal/**/*.html"]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "apps/angular-nx-monorepo/jest.config.ts",
+        "jestConfig": "apps/portal/jest.config.ts",
         "passWithNoTests": true
       },
       "configurations": {
@@ -94,7 +88,7 @@
     "serve-static": {
       "executor": "@nrwl/web:file-server",
       "options": {
-        "buildTarget": "angular-nx-monorepo:build"
+        "buildTarget": "portal:build"
       }
     }
   }

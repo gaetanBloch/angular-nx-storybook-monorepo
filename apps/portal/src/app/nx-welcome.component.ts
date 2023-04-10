@@ -1,10 +1,7 @@
-import { Component, ViewEncapsulation } from "@angular/core";
-import { CommonModule } from "@angular/common";
+import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
-  selector: "angular-nx-storybook-monorepo-nx-welcome",
-  standalone: true,
-  imports: [CommonModule],
+  selector: 'angular-nx-storybook-monorepo-nx-welcome',
   template: `
     <!--
      * * * * * * * * * * * * * * * * * * * * * * * * * * * *
@@ -17,9 +14,9 @@ import { CommonModule } from "@angular/common";
       html {
         -webkit-text-size-adjust: 100%;
         font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-          "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
-          "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-          "Noto Color Emoji";
+          'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
+          'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+          'Noto Color Emoji';
         line-height: 1.5;
         tab-size: 4;
         scroll-behavior: smooth;
@@ -54,7 +51,7 @@ import { CommonModule } from "@angular/common";
       }
       pre {
         font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-          "Liberation Mono", "Courier New", monospace;
+          'Liberation Mono', 'Courier New', monospace;
       }
       svg {
         display: block;
@@ -69,7 +66,7 @@ import { CommonModule } from "@angular/common";
         border-radius: 0.25rem;
         color: rgba(229, 231, 235, 1);
         font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-          "Liberation Mono", "Courier New", monospace;
+          'Liberation Mono', 'Courier New', monospace;
         overflow: scroll;
         padding: 0.5rem 0.75rem;
       }
@@ -423,7 +420,7 @@ import { CommonModule } from "@angular/common";
         <div id="welcome">
           <h1>
             <span> Hello there, </span>
-            Welcome angular-nx-monorepo 👋
+            Welcome portal 👋
           </h1>
         </div>
         <!--  HERO  -->
