@@ -1,4 +1,86 @@
-# AngularNxStorybookMonorepo
+# Angular Nx Storybook Monorepo
+
+# What is Nx?
+The Nx Monorepo Manager is a build and development tool for managing monorepos. A monorepo is a software development strategy where multiple projects or libraries are stored within a single repository. Nx provides a set of powerful features to help developers streamline their work in this environment, including:
+
+1. Code sharing and reuse: Nx enables developers to easily share and reuse code across multiple projects within the monorepo.
+1. Dependency management: Nx understands the dependencies between projects, allowing for efficient incremental builds and testing.
+1. Consistent tooling: Nx provides a consistent set of tools and configurations for all projects, ensuring that the entire monorepo follows best practices and remains maintainable over time.
+1. Extensible plugin system: Nx supports a wide range of plugins for popular frameworks and libraries, making it easy to add new capabilities to the monorepo.
+
+## Installing Nx
+
+To install Nx, run:
+
+```shell
+npm install -g nx
+```
+
+## Creating a new workspace
+
+To create a new Angular Nx workspace, run:
+
+```shell
+npx create-nx-workspace@latest
+```
+
+## Creating a new Angular application
+
+To create a new Angular application, run:
+
+```shell
+nx g @nrwl/angular:application portal
+```
+
+## Creating a new Angular library
+
+To create a new Angular library, run:
+
+```shell
+nx g @nrwl/angular:library ngx-components --publishable --importPath=@gblo.ch/ngx-components
+```
+
+## Creating a TypeScript library
+
+To create a new TypeScript library, run:
+
+```shell
+nx g @nrwl/js:lib ts-commons --publishable --importPath=@gblo.ch/ngx-components
+```
+
+## Running Angular portal application
+
+To run the Angular portal application, run:
+
+```shell
+nx serve portal
+```
+
+## Running Angular portal tests
+
+To run the Angular portal tests, run:
+
+```shell
+nx test portal
+```
+
+## Running Angular portal e2e tests
+
+To run the Angular portal e2e tests, run:
+
+```shell
+nx e2e portal-e2e
+```
+
+## Generate Storybook Configuration for Angular
+
+To generate Storybook configuration for Angular, run:
+
+```shell
+nx g storybook-configuration ngx-components
+```
+
+# Nx General
 
 <a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="45"></a>
 
@@ -6,7 +88,7 @@
 
 ## Development server
 
-Run `nx serve angular-nx-monorepo` for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
+Run `nx serve portal` for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
 
 ## Understand this workspace
 

@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@gblo.ch/ngx-components": ["libs/ngx-components/src/index.ts"],
+      "@gblo.ch/ts-commons": ["libs/ts-commons/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
