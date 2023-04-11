@@ -10,7 +10,5 @@ export const Primary = {
   render: (args: GbButtonComponent) => ({
     props: args,
   }),
-  args: {
-    text: 'Button',
-  },
+  args: {},
 };

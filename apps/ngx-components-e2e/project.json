@@ -13,7 +13,7 @@
       },
       "configurations": {
         "ci": {
-          "devServerTarget": "ngx-components:static-storybook:ci"
+          "devServerTarget": "ngx-components:storybook:ci"
         }
       }
     },

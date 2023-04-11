@@ -75,18 +75,6 @@
           "quiet": true
         }
       }
-    },
-    "static-storybook": {
-      "executor": "@nrwl/web:file-server",
-      "options": {
-        "buildTarget": "ngx-components:build-storybook",
-        "staticFilePath": "dist/storybook/ngx-components"
-      },
-      "configurations": {
-        "ci": {
-          "buildTarget": "ngx-components:build-storybook:ci"
-        }
-      }
     }
   }
 }

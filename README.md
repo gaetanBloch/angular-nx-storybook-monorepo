@@ -29,6 +29,7 @@ npx create-nx-workspace@latest
 To create a new Angular application, run:
 
 ```shell
+npm install -D @nrwl/angular
 nx g @nrwl/angular:application portal
 ```
 
@@ -111,7 +112,7 @@ nx storybook ngx-components
 To install Angular Material, run:
 
 ```shell
-npm install @angular/material && npx nx g @angular/material:ng-add --project=ngx-components
+ npm install @angular/material && npx nx g @angular/material:ng-add --project=ngx-components
 ```
 
 ## Adding Tailwind CSS
@@ -120,6 +121,17 @@ To add Tailwind CSS, run:
 
 ```shell
 nx g @nrwl/angular:setup-tailwind ngx-components
+```
+
+## Upgrade storybook
+
+To upgrade storybook, run:
+
+```shell
+npx storybook@next upgrade --prerelease   
+nx generate @nrwl/storybook:configuration --storybook7Configuration --uiFramework=@storybook/angular --name=ngx-components
+ npx sb@next automigrate --config-dir libs/ngx-components/.storybook --renderer @storybook/angular
+
 ```
 
 # Nx General
